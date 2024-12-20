@@ -1,0 +1,387 @@
+body {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   background-color: #F3E7D6;
+}
+
+/*-------HEADER-------*/
+header {
+   margin: 3px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 14px;
+}
+
+div.logo {
+   display: block;
+   color: #3AA8AA;
+   font-family: Forte, sans-serif;
+   text-transform: uppercase;
+}
+
+h2 a {
+   color: #2771C6BF;
+   font-size: 28px;
+   font-weight: 100;
+   text-shadow: 1px 1px #125455;
+}
+
+nav.site-nav {
+   margin: 1em;
+   padding: 0;
+   display: flex;
+   list-style-type: none;
+   text-transform: uppercase;
+}
+
+nav.site-nav p {
+   margin: 0.5em;
+   padding: 0.5em;
+}
+
+/* hover underline amimation 3 blocks*/
+nav.site-nav a {
+   display: inline-block;
+   position: relative;
+   color: dimgrey;
+}
+
+nav.site-nav a::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 1px;
+   transform: scaleX(0);
+   background-color: #9B5858;
+   transform-origin: center;
+   transition: transform 0.35s ease-out;
+}
+
+nav.site-nav a:hover::after {
+   transform: scaleX(1);
+   transform-origin: center;
+}
+
+/* focus with tab key */
+nav.site-nav a:focus::after {
+   transform: scaleX(1);
+}
+
+/*-------FOOTER-------*/
+footer {
+   margin-top: 4em;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   background-color: #3F3F3F;
+}
+
+footer p {
+   color: white;
+}
+
+/*-------MAIN CONTENT / GENERAL STYLES-------*/
+header, div.main-content, footer {
+   font-family: "Goudy Old Style";
+   color: darkslategrey;
+}
+
+div.main-content {
+   margin: 0 10em;
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+}
+
+div.home {
+   padding: 2em 0.4em;
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   justify-content: space-around;
+   background: #DFA3A2;
+   background-image: radial-gradient(#DFA3A2, #D27D7C);
+   border-radius: 30px;
+}
+
+#page-home {
+   padding: 0 0.4em;
+   width: 100%;
+}
+
+#page-h1 {
+   top: 0;
+   width: 100%;
+   text-align: center;
+}
+
+h1 {
+   position: relative;
+   top: 23px;
+   width: 30%;
+   font-family: "Imprint MT Shadow";
+   font-size: 42px;
+   color: black;
+   letter-spacing: 2px;
+   text-transform: capitalize;
+   line-height: 1.3em;
+}
+
+h3 {
+   font-size: 24px;
+   font-weight: bold;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+}
+
+font {
+   -webkit-text-fill-color: transparent;
+   color: transparent;
+   font-family: "Matura MT Script Capitals", Forte;
+   background-image: linear-gradient(3deg, blue, #3AA8AA);
+   background-clip: text;
+}
+
+#complement-font, #monochrome-font, #analogous-font, #triadic-font, #tetradic-font {
+   font-family: "Imprint MT Shadow";
+}
+
+article, nav.body-nav {
+   font-size: 18px;
+}
+
+article.details {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin: 2em 0;
+   height: 100%;
+   background: #F3E7D6;
+}
+
+div.detail-box {
+   display: flex;
+   flex-direction: column;
+   flex-basis: 50%;
+   padding: 5px 1em;
+   background-color: white;
+   border-radius: 30px;
+}
+
+div.gallery {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   align-items: center;
+   justify-items: center;
+   gap: 10px;
+}
+
+img.img1 {
+   grid-column: 1 / 3;
+}
+
+img.img2 {
+   grid-column: 3 / 5;
+}
+
+div.image {
+   margin: 0.5em 0;
+   padding: 5px 0;
+   background-image: radial-gradient(#DFA3A2, #D27D7C);
+   border-radius: 30px;
+}
+
+div.image img {
+   max-width: 40%;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+   cursor: pointer;
+}
+
+p {
+   display: block;
+   margin: 1em 0;
+}
+
+p.current-page a {
+   color: #589B9B;
+}
+
+p.read a {
+   font-size: 16px;
+   color: darkslategrey;
+}
+
+p.read a:hover {
+   color: blue;
+}
+
+p.read a:focus {
+   color: blue;
+}
+
+p.descript {
+   flex-basis: 40%;
+}
+
+img {
+   max-width: 100%;
+   width: auto;
+   height: auto;
+   border-radius: 30px;
+}
+
+/*-------INDEX-------*/
+div.feature-img {
+   max-width: 430px;
+   display: block;
+   position: relative;
+}
+
+#wheel, #smoke {
+   position: relative;
+   background-color: white;
+   border: 0.5px solid #3AA8AA;
+}
+
+#wheel {
+   padding: 0.5em;
+   max-width: 30%;
+   right: 4em;
+   bottom: 2em;
+}
+
+#smoke {
+   max-width: 100%;
+   top: 2em;
+}
+
+article {
+   display: block;
+   align-content: center;
+   text-align: center;
+   width: 100%;
+   height: 150px;
+   color: darkslategrey;
+   background-image: linear-gradient(90deg, transparent, white, transparent);
+}
+
+nav.body-nav {
+   display: flex;
+   flex-direction: column;
+}
+
+div.nav-card {
+   display: flex;
+   align-items: center;
+   margin-bottom: 0.5em;
+   height: 200px;
+   background-color: #DFA3A2;
+   background-image: url(images/watercolor-gradient.jpg);
+   background-size: 150%;
+   background-position: center;
+   background-position-x: right;
+   background-blend-mode: lighten;
+   border-radius: 30px;
+   transition: transform 0.35s linear;
+}
+
+div.nav-card:hover {
+   transform: scale(1.05);
+}
+
+#monochrome-card, #triadic-card {
+   flex-direction: row-reverse;
+   background-position-x: left;
+}
+
+#tetradic-card {
+   margin-bottom: 0;
+}
+
+div.nav-img {
+   display: flex;
+   flex-basis: 200px;
+   justify-content: left;
+}
+
+div.nav-img a img:hover {
+   filter: alpha(opacity = 80);
+   opacity: 0.8;
+}
+
+/* monochrome and triadic img container */
+#monochrome-card div.nav-img, #triadic-card div.nav-img {
+   justify-content: right;
+}
+
+#analogous-card div.nav-img, #triadic-card div.nav-img {
+   flex-basis: 276px;
+}
+
+#complementary, #monochrome, #analogous, #triadic, #tetradic {
+   margin: 1em 2.5em;
+   max-width: 57%;
+}
+
+#analogous {
+   max-width: 80%;
+}
+
+#triadic {
+   max-width: 50%
+}
+
+div.nav-info {
+   margin-right: 2.5em;
+   margin-left: 0.3em;
+   display: flex;
+   flex-grow: 2;
+   flex-direction: column;
+   align-items: flex-end;
+}
+
+/* first p of body nav */
+div.nav-info p:first-child {
+   text-transform: uppercase;
+}
+
+/* info from body nav */
+#monochrome-card div.nav-info, #triadic-card div.nav-info {
+   margin-left: 2.5em;
+   margin-right: 0.3em;
+   align-items: flex-start;
+}
+
+/*-------COMPLEMENTARY STYLES-------*/
+#complement-font {
+   background-image: linear-gradient(60deg, red, green);
+}
+
+/*-------MONOCHROMATIC STYLES-------*/
+#monochrome-font {
+   background-image: linear-gradient(60deg, white, blue, black);
+}
+
+/*-------ANALOGOUS STYLES-------*/
+#analogous-font {
+   background-image: linear-gradient(60deg, blue, darkcyan, green);
+}
+
+/*-------TRIADIC STYLES-------*/
+#triadic-font {
+   background-image: linear-gradient(60deg, green, purple, orange);
+}
+
+/*-------TETRADIC STYLES-------*/
+#tetradic-font {
+   background-image: linear-gradient(60deg, red, blue, orange, green);
+}
